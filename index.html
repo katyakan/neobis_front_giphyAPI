@@ -1,12 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+    <meta charset="UTF-8" />
+    <!--   favicon -->
+    <link rel="icon" type="image/png" href="./assets/logo/favicon.png" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!--   fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:wght@400;500;700;900&display=swap"
+      rel="stylesheet" />
+    <title>Giphy API</title>
+    </head>
+
+    <body>
+    <header>
+      <svg class="">
+        <use xlink:href="./assets/logo/sprite.svg#logo-svg"></use>
+      </svg>
+      <div class="header__section">
+        <input type="text" id="searchTerm" placeholder=" API GIPHY Search" />
+        <button id="searchButton">
+          <svg class="search-svg">
+            <use xlink:href="./assets/logo/sprite.svg#magnifying-glass"></use>
+          </svg>
+        </button>
+        <button id="resetButton">
+          <svg class="search-svg">
+            <use xlink:href="./assets/logo/sprite.svg#reset-alt"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <main class="main">
+      <h1>Giphy Search</h1>
+      <!--giphy block js-->
+      <div id="gifArea" class="center"></div>
+    </main>
+    <!-- script -->
+    <script src="./js/script.js"></script>
+    </body>
 </html>

@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+svg {
+  height: 5rem;
+}
+.search-svg {
+  width: 2rem;
+  height: 2rem;
+}
+.main {
+  text-align: center;
+  margin: 0 auto;
+}
+.center {
+  margin: 0 auto;
+  text-align: center;
+ 
+}
+header {
+  background-image: linear-gradient(to right, darkred, red, orange, yellow, green, blue, violet, darkviolet, purple );
+  height: 10rem;
+  align-items: center;
+  display: flex;
+  padding: 0 9rem 0 2rem;
+  justify-content: space-between;
+  
+}
+h1 {
+  color: #fff;
+  font: 1rem;;
+}
+.header__section {
+  display: flex;
+  justify-content: space-between;
+}
+#searchTerm {
+  
+  font-family: inherit;
+    font-size: 2.4rem;
+  border: none;
+  background-color: white;
+  padding: .7rem 2rem;
+  border-radius: 10rem;
+  width: 90%;
+  width: 30rem;
+  transition: all .2s;
+    margin-right: -4rem;
+}
+#searchTerm:focus {
+  outline: none;
+  width: 100%;
+  width: 33rem;
+  background-color: white;
+}
+#searchTerm:focus + #searchButton {
+  background-color:white;
+}
+#searchTerm:focus + #resetButton {
+  background-color:white;
+}
+#searchButton {
+  border: none;
+  background-color: white;
+  margin-left: -3rem;
+  margin-right: 1.8rem;
+  cursor: pointer;
+}
+
+#searchButton:focus {
+  background-attachment:white;
+  outline: none;
+}
+#searchButton:active {
+  transform: scale(1.01);
+}
+
+#resetButton {
+  border: none;
+  margin-left: -1rem;
+  cursor: pointer;
+  background-color: white;
+  
+}
+#gifArea {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  width: 98%;
+  margin: 0 1rem;
+  text-align: center;
+  padding-left: auto;
+  padding-right: auto;
+  overflow: hidden;
+
+}
+
+#gifArea img {
+  width: 31%;
+  height: 30rem;
+  overflow: hidden;
+  border-radius: .5rem;
+}
+
